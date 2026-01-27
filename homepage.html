@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Proctoring & Skill Certification</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f1f3f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #1e293b;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #e5e7eb;
+            margin: 0 18px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            background-color: #ffffff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #0f172a;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: #cbd5f5;
+            text-align: center;
+            padding: 18px;
+            font-size: 14px;
+            .btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #1e293b;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    visibility: hidden;
+}
+
+.overlay:target {
+    visibility: visible;
+}
+
+.popup {
+    background: white;
+    width: 400px;
+    margin: 120px auto;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #0f172a;
+}
+
+.popup input {
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+}
+
+.popup a.close {
+    float: right;
+    text-decoration: none;
+    color: #333;
+}
+
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Online Proctoring System and Skill Certification</h1>
+    <p>Secure Digital Assessment and Verified Credentialing Platform</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="proctoring.html">Online Proctoring</a>
+    <a href="certification.html">Skill Certification</a>
+    <a href="#login" class="btn">Login</a>
+    <a href="#exam" class="btn">Start Exam</a>
+    <a href="#certificate" class="btn">View Certificate</a>
+</nav>
+
+<div class="container">
+
+    <div class="section">
+        <h2>Project Overview</h2>
+        <p>
+            The Online Proctoring System and Skill Certification platform is designed
+            to provide a secure, reliable, and scalable solution for conducting
+            online examinations and issuing authenticated digital certificates.
+            The system ensures academic integrity while supporting remote assessment.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Problem Statement</h2>
+        <p>
+            Traditional examination systems face challenges such as malpractice,
+            lack of scalability, geographical limitations, and high operational costs.
+            This project addresses these issues by offering a secure online alternative.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>System Objectives</h2>
+        <ul>
+            <li>Ensure secure and fair online examinations</li>
+            <li>Prevent impersonation and cheating</li>
+            <li>Provide verifiable skill certification</li>
+            <li>Support remote learning environments</li>
+        </ul>
+    </div>
+
+</div>
+<div id="login" class="overlay">
+    <div class="popup">
+        <a class="close" href="#">✖</a>
+        <h2>User Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <a href="#exam" class="btn">Login</a>
+    </div>
+</div>
+<div id="exam" class="overlay">
+    <div class="popup">
+        <a class="close" href="#">✖</a>
+        <h2>Online Assessment</h2>
+
+        <p><b>Q1.</b> What is Online Proctoring?</p>
+        <input type="radio"> Monitoring online exams<br><br>
+
+        <p><b>Q2.</b> Purpose of Skill Certification?</p>
+        <input type="radio"> Skill validation<br><br>
+
+        <a href="#certificate" class="btn">Submit Exam</a>
+    </div>
+</div>
+<div id="certificate" class="overlay">
+    <div class="popup">
+        <a class="close" href="#">✖</a>
+        <h2>Skill Certification</h2>
+
+        <p><b>Candidate:</b> Student Name</p>
+        <p><b>Course:</b> Online Proctoring System</p>
+        <p><b>Status:</b> Successfully Completed</p>
+
+        <a href="#" class="btn">Download Certificate</a>
+    </div>
+</div>
+
+
+<footer>
+    © 2026 Online Proctoring & Skill Certification | Academic Project
+</footer>
+
+</body>
+</html>
