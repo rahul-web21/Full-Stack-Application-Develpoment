@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Events</title>
+  <style>
+    #box {
+      width: 50px;
+      height: 50px;
+      background: red;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="box"></div>
+
+<script>
+let x = 100;
+
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowRight") x += 10;
+  if (e.key === "ArrowLeft") x -= 10;
+  box.style.left = x + "px";
+});
+
+document.addEventListener("mousemove", e => {
+  if (e.clientX < window.innerWidth/2)
+    document.body.style.background = "#ffe";
+  else
+    document.body.style.background = "#eef";
+});
+</script>
+
+</body>
+</html>
